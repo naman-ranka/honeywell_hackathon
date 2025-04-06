@@ -1,0 +1,9 @@
+# requirements.txt
+Flask>=2.0
+python-dotenv>=0.15
+# Add google-generativeai when implementing the actual LLM call
+google-generativeai>=0.3.0
+# Add boto3 when implementing the actual AWS calls in scripts
+# boto3
+# Add waitress for a production-ready server on Windows
+waitress>=2.0

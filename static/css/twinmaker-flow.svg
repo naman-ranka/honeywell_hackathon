@@ -1,0 +1,109 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Styles -->
+  <style>
+    .box {
+      fill: white;
+      stroke: #0066CC;
+      stroke-width: 2;
+      rx: 10;
+      ry: 10;
+    }
+    .arrow {
+      stroke: #64748B;
+      stroke-width: 2;
+      marker-end: url(#arrowhead);
+    }
+    .box-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      fill: #0066CC;
+      text-anchor: middle;
+    }
+    .box-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      fill: #102A43;
+      text-anchor: middle;
+    }
+    .highlight {
+      fill: #0066CC;
+      opacity: 0.1;
+    }
+    .icon {
+      font-family: 'Bootstrap-Icons';
+      font-size: 24px;
+      fill: #0066CC;
+      text-anchor: middle;
+    }
+  </style>
+  
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748B" />
+    </marker>
+  </defs>
+  
+  <!-- Natural Language Input -->
+  <rect x="50" y="150" width="160" height="100" class="box highlight" />
+  <rect x="50" y="150" width="160" height="100" class="box" />
+  <text x="130" y="180" class="box-title">Natural Language</text>
+  <text x="130" y="200" class="box-text">Factory description in</text>
+  <text x="130" y="220" class="box-text">plain language</text>
+  <text x="130" y="130" class="icon">&#xF5AE;</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="210" y1="200" x2="270" y2="200" class="arrow" />
+  
+  <!-- Gemini AI Processing -->
+  <rect x="270" y="150" width="160" height="100" class="box highlight" />
+  <rect x="270" y="150" width="160" height="100" class="box" />
+  <text x="350" y="180" class="box-title">Gemini AI</text>
+  <text x="350" y="200" class="box-text">Processes description and</text>
+  <text x="350" y="220" class="box-text">generates JSON configs</text>
+  <text x="350" y="130" class="icon">&#xF6E1;</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="430" y1="200" x2="490" y2="200" class="arrow" />
+  
+  <!-- TwinMaker Configurations -->
+  <rect x="490" y="150" width="160" height="100" class="box highlight" />
+  <rect x="490" y="150" width="160" height="100" class="box" />
+  <text x="570" y="180" class="box-title">TwinMaker Configs</text>
+  <text x="570" y="200" class="box-text">6 structured JSON configs</text>
+  <text x="570" y="220" class="box-text">ready for deployment</text>
+  <text x="570" y="130" class="icon">&#xF3CC;</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="570" y1="250" x2="570" y2="290" class="arrow" />
+  
+  <!-- AWS Deployment -->
+  <rect x="490" y="290" width="160" height="100" class="box highlight" />
+  <rect x="490" y="290" width="160" height="100" class="box" />
+  <text x="570" y="320" class="box-title">AWS Deployment</text>
+  <text x="570" y="340" class="box-text">Executes provisioning</text>
+  <text x="570" y="360" class="box-text">scripts on AWS IoT</text>
+  <text x="570" y="380" class="icon">&#xF5E5;</text>
+  
+  <!-- Components -->
+  <rect x="130" y="290" width="300" height="100" class="box" />
+  <text x="280" y="320" class="box-title">Digital Twin Components</text>
+  <text x="200" y="340" class="box-text">Workspace</text>
+  <text x="280" y="340" class="box-text">Component Types</text>
+  <text x="360" y="340" class="box-text">Entities</text>
+  <text x="200" y="360" class="box-text">Assets</text>
+  <text x="280" y="360" class="box-text">Scene</text>
+  <text x="360" y="360" class="box-text">Connections</text>
+  <text x="280" y="270" class="icon">&#xF5EA;</text>
+  
+  <!-- Arrow 4 -->
+  <line x1="430" y1="340" x2="490" y2="340" class="arrow" />
+  
+  <!-- Curved Arrow from AWS Deployment back to Natural Language -->
+  <path d="M 490 320 C 400 320 400 80 150 80 C 100 80 100 150 130 150" fill="none" class="arrow" />
+  <text x="280" y="70" class="box-text">Iterative Refinement</text>
+  
+  <!-- Title -->
+  <text x="400" y="30" class="box-title" style="font-size: 24px;">TwinMaker Digital Twin Creation Process</text>
+</svg> 
